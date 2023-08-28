@@ -1,6 +1,7 @@
 library(tidyverse)
 library(usdata)
 library(lubridate)
+library(zoo)
 #State
 hospitalizations<-read_csv("https://healthdata.gov/resource/g62h-syeh.csv?$limit=80000") %>% 
   arrange(date,state) %>% 
